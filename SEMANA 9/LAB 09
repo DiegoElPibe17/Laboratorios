@@ -1,0 +1,94 @@
+try:
+    N= int(input("Ingrese un numero\n"))
+    if (N==0):
+        print("Numero no valido")
+    else:
+        if(N%2==0):
+            print("Numero par")
+        else:
+            print("Numero impar")
+except ValueError:
+    print("Porfavor ingrese un numero valido")
+    print("Ejercicio 1: operaciones")
+Num1=input ("Insertar un numero:\n")
+Num2=input ("Insertar segundo numero:\n")
+Num1=int(Num1)
+Num2=int(Num2)
+
+Res1=Num1+Num2
+print(Num1,"+",Num2,"=", Res1)
+
+Res2=Num1-Num2
+print(Num1,"-",Num2,"=", Res2)
+
+Res3=Num1*Num2
+print(Num1,"*",Num2,"=", Res3)
+
+Res4=Num1/Num2
+print(Num1,"/",Num2,"=", Res4)
+
+Res5=Num1%Num2
+print(Num1,"%",Num2, "=",Res5)
+
+Res6=Num1//Num2
+print(f"(Num1) / (Num2) ={Res6}")
+
+
+print("Ejercicio 2: operaciones Boleanas")
+Num3=bool("Insertar un numero:\n")
+Num4=bool("Insertar segundo numero:\n")
+Num3=str(Num3)
+Num4=str(Num4)
+
+Res1=Num3>Num4
+print(Num3,">",Num4,"=", Res1)
+
+Res2=Num3<Num4
+print(Num3,"<",Num4,"=", Res2)
+
+Res3=Num3==Num4
+print(Num3,"==",Num4,"=", Res3)
+
+Res4=Num3!=Num4
+print(Num3,"!=",Num4, "=",Res4)
+
+
+a=input("Insertar un numero\n")
+b=input("Ingrese otro numero\n")
+c=input("ingrese otro numero\n")
+
+a=(int(a))
+b=(int(b))
+c=(int(c))
+
+a1=(a*b)+c
+print(a,"*",b,"+",c,"=", a1)
+a2=a*(b+c)
+print(a,"*",b,"+",c,"=", a2)
+a3=a/b+c
+print(a,"/",b,"+",c,"=", a3)
+a4=3*a+2*b/c**2
+print(3,"",a,"+",2,"",b,"/",c,"=", a4)
+print("Serie No.2")
+Num1= input("Inserte una medida en Metro\n")
+Num1=(int(Num1))
+millas=(Num1*1000)/1.69
+km= Num1*1000
+Ft= Num1*3.28
+In= Ft/12
+
+print("Resultado\n")
+print("Millas:",millas)
+print("Pies:",Ft)
+print("Pulgadas", In)
+print("Kilometros",km)
+Num2=input("Inserte otra medida en metros\n")
+Num2=(int(Num2))
+
+yardas= Num2*1.094
+ft=Num2*3.28
+In=ft/12
+print("Resultado\n")
+print("Yardas:",yardas)
+print("Pies:",Ft)
+print("Pulgadas", In)
