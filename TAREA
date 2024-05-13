@@ -1,0 +1,35 @@
+def calcular_precio_envio(tipo_vehiculo, kilometros):
+    if tipo_vehiculo.lower() == "vehículo":
+        cobro_fijo = 20
+        if kilometros <= 5:
+            cobro_por_kilometro = 6
+        elif kilometros <= 10:
+            cobro_por_kilometro = 5
+        else:
+            cobro_por_kilometro = 4
+    elif tipo_vehiculo.lower() == "motocicleta":
+        cobro_fijo = 10
+        if kilometros <= 5:
+            cobro_por_kilometro = 3
+        elif kilometros <= 10:
+            cobro_por_kilometro = 2.5
+        else:
+            cobro_por_kilometro = 2
+    else:
+        return "Tipo de vehículo no válido"
+    
+    precio_final = cobro_fijo + cobro_por_kilometro * kilometros
+    return precio_final
+
+# Solicitar datos al usuario
+tipo_vehiculo = input("¿Desea el envío en vehículo o motocicleta? ")
+kilometros = float(input("¿Cuántos kilómetros desea realizar el envío? "))
+
+# Calcular precio final del envío
+precio_final = calcular_precio_envio(tipo_vehiculo, kilometros)
+
+# Mostrar resultado
+if isinstance(precio_final, str):
+    print(precio_final)
+else:
+    print("El precio final del envío es: Q.", precio_final)
